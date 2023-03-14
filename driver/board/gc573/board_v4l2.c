@@ -619,7 +619,7 @@ static void gc573_v4l2_buffer_prepare(v4l2_model_callback_parameter_t *cb_info)
         plane_sizes[1] = framegrabber_g_out_planesize(board_v4l2_cxt->fg_handle, 2);
         plane_sizes[0] = framegrabber_g_out_planesize(board_v4l2_cxt->fg_handle, 1);
 
-        aver_xilinx_translate_desclist(board_v4l2_cxt->aver_xilinx_handle, plane_sizes[0], plane_sizes[1], plane_sizes[2]);
+        //aver_xilinx_translate_desclist(board_v4l2_cxt->aver_xilinx_handle, plane_sizes[0], plane_sizes[1], plane_sizes[2]);
 
         aver_xilinx_active_current_desclist(board_v4l2_cxt->aver_xilinx_handle,gc573_video_buffer_done,board_v4l2_cxt);
     }  
